@@ -1,0 +1,10 @@
+                $(document).on('click', '.btn', function (e) {
+                    if (!$(this).attr('disabled')) {
+                        $(this).attr('disabled', true);
+                        var t = $(this);
+                        setTimeout(function () {
+                            t.attr('disabled', false);
+                        }, 3000); //back 3
+                    }
+                });
+               //Day 9 #100DaysofCode
